@@ -8,7 +8,6 @@ function Cart(props) {
       .delete(`http://localhost:5000/api/cart/${newItem.cart_id}`)
       .then(() => {
         props.cartRequest();
-        alert(`${newItem.name} has been removed from your cart`);
       })
       .catch((err) => console.error(err));
   };
@@ -26,7 +25,7 @@ function Cart(props) {
       {props.cart.length > 0 ? (
         props.cart.map((elem, index) => {
           return (
-            <div className="product-card-upper cart-card">
+            <div className="cart-card">
               <div className="cart-image-container">
                 <img src={elem.image}></img>
               </div>

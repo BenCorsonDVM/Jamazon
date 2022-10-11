@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  align-items: center;
 }
 
 p {
@@ -13,9 +14,8 @@ img {
 }
 
 .products {
-  width: 100 vw;
-  display: grid;
-  grid-template-columns: repeat(4, 350px);
+  width: 100vw;
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }

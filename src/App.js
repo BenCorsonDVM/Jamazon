@@ -27,7 +27,6 @@ function App() {
 
     axios.post("http://localhost:5000/api/cart", body).then((res) => {
       setCart(res.data);
-      alert(`${name} has been added to your cart`);
     });
   };
 
